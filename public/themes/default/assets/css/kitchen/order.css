@@ -1,0 +1,30 @@
+.container-dot {
+    background: url(../../images/note_dot.png) repeat-x;
+    border-bottom: 0 none;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 3;
+    position: relative;
+}
+
+span.qty-order {
+    font-size: 15px;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+}
+
+.strikethrough {
+    font-size: 16px;
+}
+
+.css-checkbox {
+    position: relative;
+    left: 19px;
+}
+.note {
+    margin-left: 23px;
+    font-style: italic;
+}

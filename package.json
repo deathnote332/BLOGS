@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-14",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3"
+  },
+  "name": "exercise1",
+  "description": "<p align=\"center\"><img src=\"https://laravel.com/assets/img/components/logo-laravel.svg\"></p>",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.10.2",
+    "mysql-events": "^0.0.11",
+    "socket.io": "^1.7.2",
+    "zongji": "^0.4.4",
+    "mysql"    : "~2.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roimacuana/exercise1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roimacuana/exercise1/issues"
+  },
+  "homepage": "https://github.com/roimacuana/exercise1#readme"
+}
