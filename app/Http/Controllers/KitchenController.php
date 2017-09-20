@@ -75,7 +75,7 @@ class KitchenController extends Controller
 
         $order = Order::find($order_id);
         $token = User::find($order_id->user_id)->token;
-
+        $message_status = '';
         if(!empty($token) || $token != null){
             $tokens = array();
             $tokens[]=$token;
