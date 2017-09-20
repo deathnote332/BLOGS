@@ -75,10 +75,14 @@ class KitchenController extends Controller
 
         $order = Order::find($order_id);
         $token = User::find($order_id->user_id)->token;
-        $tokens = array();
-        $tokens[]=$token;
-        $message = array("message" => "Order is now ready to serve for Table ".$order->table_number);
-        $message_status = $this->send_notification($token,$message);
+
+        if(!empty($token) || $token != null){
+            $tokens = array();
+            $tokens[]=$token;
+            $message = array("message" => "Order is now ready to serve for Table ".$order->table_number);
+            $message_status = $this->send_notification($token,$message);
+        }
+
         return $message_status;
         
     }
