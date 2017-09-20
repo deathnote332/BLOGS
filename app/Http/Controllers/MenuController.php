@@ -265,7 +265,7 @@ class MenuController extends Controller
         $user_id = $request->user_id;
         $table_number = $request->table_number;
 
-        $orders = DB::table('orders')->where('user_id', $user_id)->where('table_number', $table_number)->orderBy('id', 'desc')->get();
+        $orders = DB::table('orders')->where('user_id', $user_id)->where('transaction_date',date('Y-m-d'))->where('table_number', $table_number)->orderBy('id', 'desc')->get();
 
         $list = [];
         foreach ($orders as $key => $val) {
