@@ -10,12 +10,12 @@
 
 
 
-        var socket = io.connect('http://127.0.0.1:8080');
+//        var socket = io.connect('http://127.0.0.1:8080');
         loadAjax();
 
-        socket.on('new_data', function(msg) {
-            loadAjax();
-        });
+//        socket.on('new_data', function(msg) {
+//            loadAjax();
+//        });
 
         function loadAjax(){
             $.ajax({

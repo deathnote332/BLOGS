@@ -8,6 +8,7 @@ use App\RecipeIngredient;
 use App\OrderItem;
 use App\Menu;
 use App\Order;
+use App\User;
 use Illuminate\Http\Request;
 use Theme;
 use App\Sample;
@@ -70,6 +71,8 @@ class KitchenController extends Controller
                 $minus = Ingredient::where('id',$sub_item_id->ingredient_id)->decrement('quantity',$val['quantity']*$sub_item_id->quantity);
             }
         }
+
+
         $order = Order::find($order_id);
         $token = User::find($order_id->user_id)->token;
         $tokens = array();
